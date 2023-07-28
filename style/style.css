@@ -1,0 +1,229 @@
+@font-face {
+  font-family: mono-regular;
+  src: url(../fonts/SpaceMono-Regular.ttf);
+}
+@font-face {
+  font-family: mono-bold;
+  src: url(../fonts/SpaceMono-Bold.ttf);
+}
+@font-face {
+  font-family: mono-italic;
+  src: url(../fonts/SpaceMono-Italic.ttf);
+}
+:root {
+  --bg-light: #f6f8ff;
+  --name-color: #2b3442;
+  --text-gray: #4b6a9b;
+  --elem-bg: #fefefe;
+  --input-color: #222731;
+  --date-color: #697c9a;
+  --stats-bg: #f6f8ff;
+  --mode-color: #697c9a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+.dark-mode {
+  --bg-light: #141d2f;
+  --name-color: #ffffff;
+  --text-gray: #ffffff;
+  --elem-bg: #1e2a47;
+  --input-color: #222731;
+  --date-color: #697c9a;
+  --stats-bg: #141d2f;
+  --mode-color: #fff;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-light);
+}
+.github {
+  width: 750px;
+  height: auto;
+}
+.main_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+.logo {
+  color: var(--name-color);
+  font-size: 26px;
+  font-family: mono-bold;
+}
+.mode {
+  display: flex;
+  font-family: mono-bold;
+  font-size: 13px;
+  color: var(--mode-color);
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+.sun {
+  display: none;
+}
+.switch-off {
+  display: block;
+}
+.switch {
+  display: none;
+}
+.search-bar {
+  width: 100%;
+  height: 69px;
+  display: flex;
+  gap: 23px;
+  background-color: var(--elem-bg);
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  padding: 23px 0px 23px 32px;
+  margin-bottom: 24px;
+}
+.search-bar form{
+  width: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-bar input {
+  width: 74%;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 18px;
+  color: var(--text-gray);
+  font-family: mono-regular;
+}
+.twitter-in {
+  color: var(--text-gray);
+  text-decoration: none;
+}
+.twitter-in:active {
+  text-decoration: underline;
+}
+.input-onerror {
+  width: 59%;
+}
+.search-btn{
+  font-family: mono-bold;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  background-color: #0079FF;
+  border-radius: 10px;
+  color: #fff;
+}
+.search-btn:hover{
+  background-color: #60ABFF;
+}
+.search-error {
+  display: none;
+  color: #f74646;
+  font-family: mono-bold;
+  font-size: 15px;
+}
+.main-info {
+  width: 100%;
+  border-radius: 15px;
+  padding: 48px;
+  background: var(--elem-bg);
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+}
+.info-top {
+  display: flex;
+  gap: 37px;
+}
+.info-img img {
+  width: 117px;
+  height: 117px;
+  transition: 0s;
+  border-radius: 50%;
+}
+.info-right {
+  width: 100%;
+}
+.right-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+.name {
+  font-family: mono-bold;
+  font-size: 26px;
+  color: var(--name-color);
+}
+.date {
+  color: var(--date-color);
+  font-family: mono-regular;
+  font-size: 15px;
+}
+.info-id {
+  color: #0079ff;
+  font-family: mono-regular;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.info-desc {
+  font-family: mono-regular;
+  color: var(--text-gray);
+  font-size: 15px;
+  margin-top: -2rem;
+  margin-left: 23.5%;
+  margin-bottom: 32px;
+}
+.info-stats {
+  width: 480px;
+  height: 85px;
+  display: flex;
+  padding: 15px 32px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 23.5%;
+  background-color: var(--stats-bg);
+  margin-bottom: 37px;
+}
+.stats_title {
+  font-family: mono-regular;
+  font-size: 13px;
+  color: var(--text-gray);
+}
+.stats_desc {
+  font-family: mono-bold;
+  font-size: 22px;
+  color: var(--name-color);
+}
+.info-links {
+  display: flex;
+  gap: 62px;
+  margin-left: 23.5%;
+}
+.links_icon {
+  width: 20px;
+  height: 20px;
+}
+.links_block {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 19px;
+}
+.links_text {
+  font-family: mono-regular;
+  font-size: 15px;
+  color: var(--text-gray);
+}
